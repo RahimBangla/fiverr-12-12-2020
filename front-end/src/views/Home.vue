@@ -45,7 +45,7 @@ export default {
 
 .image small {
   /* font-style: italic; */
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* Masonry */

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=iTube Studio
+Exec=env WINEPREFIX="/home/rbsoft/.wine" wine-stable C:\\\\windows\\\\command\\\\start.exe /Unix /home/rbsoft/.wine/dosdevices/c:/users/Public/Desktop/iTube\\ Studio.lnk
+Type=Application
+StartupNotify=true
+Comment=C:\Program Files (x86)\Aimersoft\Aimersoft iTube Studio\iTubeStudio.exe
+Path=/home/rbsoft/.wine/dosdevices/c:/Program Files (x86)/Aimersoft/Aimersoft iTube Studio
+Icon=322C_iTubeStudio.0
+StartupWMClass=itubestudio.exe

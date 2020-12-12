@@ -11,11 +11,18 @@
         <p></p>
         <textarea v-model="description" placeholder="Description"></textarea>
         <p></p>
-        <input type="file" name="photo" @change="fileChanged" />
+        <input
+          type="file"
+          name="photo"
+          @change="fileChanged"
+          ref="fileupload"
+        />
         <button @click="upload">Upload</button>
       </div>
       <div class="upload" v-if="addItem">
         <h2>{{ addItem.title }}</h2>
+        <small>{{ addItem.title }}</small>
+        <p></p>
         <img :src="addItem.path" />
       </div>
     </div>
@@ -41,7 +48,7 @@
       <div class="upload" v-if="findItem">
         <input v-model="findItem.title" />
         <p></p>
-        <!-- <textarea v-model="findItem.description"></textarea> -->
+        <textarea v-model="findItem.description"></textarea>
         <p></p>
         <img :src="findItem.path" />
       </div>
@@ -90,7 +97,9 @@ export default {
         this.title = "";
         this.description = "";
         this.file = null;
+        this.$refs.fileupload.value = null;
         this.getItems();
+        // this.addItem = null;
       } catch (error) {
         console.log(error);
       }
