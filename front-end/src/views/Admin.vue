@@ -155,7 +155,7 @@ export default {
 <style scoped>
 .image h2 {
   font-style: italic;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .heading {
