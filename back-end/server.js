@@ -4,7 +4,7 @@ const cors = require('cors');
 // Configure multer so that it will upload to '../front-end/public/images'
 const multer = require('multer')
 const upload = multer({
-  dest: '../front-end/public/images/',
+  dest: '/var/www/museum.christianjuniuscs260.me/images/',
   limits: {
     fileSize: 10000000
   }
